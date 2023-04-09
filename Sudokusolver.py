@@ -68,14 +68,14 @@ grid = np.zeros((9, 9), dtype=int)
 
 sudoku = input("Enter the sudoku: ")
 sudoku = sudoku.split()
-print(sudoku)
+#print(sudoku)
 for i in range(9):
     for k, j in enumerate(sudoku[i]):
         # print(f"sudoku{i}{sudoku[i]}")
         # print(f"j:{int(j)}")
         grid[i][k] = int(j)
         # print(f"grid:{grid[k][i]}")
-print(grid)
+# print(grid)
 if (Suduko(grid, 0, 0)):
     print_grid(grid)
 else:
